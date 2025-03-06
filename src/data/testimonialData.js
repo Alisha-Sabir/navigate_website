@@ -1,0 +1,48 @@
+const testimonialData = [
+    // {
+    //     id: 1,
+    //     heading: "Customer testimonial",
+    //     stars : 5,
+    //     rating: 5,
+    //     description: "I absolutely love it! I feel like it takes about 4 different platforms and brings them together to cover what everyone else is missing. I love what I'm seeing",
+    //     username: "Erin Kreuger",
+    //     designation : "Top TN Agent Compass, Inc.",
+    //     image : "/images/user_1.png",
+    //     profileimage : "/images/user_profile_1.png",
+    // },
+    // {
+    //     id: 2,
+    //     heading: "Customer testimonial",
+    //     stars : 4.5,
+    //     rating : 4.5,
+    //     description: "I”d definitely spend the $200-300 a month to use this",
+    //     username: "Hugh Jordan",
+    //     designation : "Top AR Agent Compass, Inc.",
+    //     image : "/images/user_2.png",
+    //     profileimage : "/images/user_profile_2.png",
+    // },
+    {
+        id: 1,
+        heading: "Customer testimonial",
+        stars : 5,
+        rating: 5.0,
+        description: "Navigate takes all the manual work out of prospecting. Draw an area, set your criteria, and it handles the rest",
+        username: "Sarah K.",
+        designation : "Top TN Agent Compass, Inc.",
+        image : "/images/user_1.png",
+        profileimage : "/images/user_profile_3.png",
+    },
+    {
+        id: 2,
+        heading: "Customer testimonial",
+        stars : 5,
+        rating: 5.0,
+        description: "I've found three off-market opportunities in my first month using Navigate. The property data is reliable and the outreach tools save hours",
+        username: "Renee Wells",
+        designation : "Agent Quotient",
+        image : "/images/user_2.png",
+        profileimage : "/images/user_profile_4.png",
+    },
+]
+
+export default testimonialData;
