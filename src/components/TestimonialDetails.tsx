@@ -67,9 +67,9 @@ export default function TestimonialDetails() {
                   />
                   </Col>
                   <Col xs={12} lg={11}>
-                   <h3 className="inter-home mb-3">
+                   <p style={{ fontSize : "25px" }} className="fw-bold mb-3">
                      {item.heading}
-                   </h3>
+                   </p>
                    <div className="d-flex mt-3 text-center">
                      {generateStars(item.stars)}
                      {/* <small className="text-secondary ms-1 text-dark">{item.rating}</small> */}

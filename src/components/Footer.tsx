@@ -90,7 +90,7 @@ export default function Footer() {
             </Col>
 
             <Col md={3} lg={3} xl={2} className="mx-auto mx-md-0 mx-lg-2 mx-xl-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Company</h6>
+              <p className="text-uppercase fw-bold mb-4">Company</p>
               <Link legacyBehavior href="/about-us">
               <p style={{ cursor : "pointer", color : "#D0D4E0" }}>About</p>
             </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
             </Col>
 
             <Col md={3} lg={3} xl={2} className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Product</h6>
+              <p className="text-uppercase fw-bold mb-4">Product</p>
               <Link legacyBehavior href="/">
               <p style={{ cursor : "pointer", color : "#D0D4E0" }}>Features</p>
             </Link>
@@ -108,7 +108,7 @@ export default function Footer() {
             </Col>
 
             <Col md={3} lg={3} xl={2} className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Legal</h6>
+              <p className="text-uppercase fw-bold mb-4">Legal</p>
               <p
                 style={{ cursor : "pointer", color : "#D0D4E0" }}
                 onClick={() =>
