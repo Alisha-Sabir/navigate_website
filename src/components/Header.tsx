@@ -1,13 +1,10 @@
 import React, { useState , useEffect } from 'react';
 import { Container, Nav, Navbar, NavDropdown, Button, Row , Col, Card } from 'react-bootstrap';
 import Image from 'next/image';
-import { useRouter } from "next/router";
 import productData from '@/data/productData';
 
 
 export default function Header() {
-
-  const router = useRouter();
 
 
   const [productSectionData, setProductSectionData] = useState(productData);

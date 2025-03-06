@@ -3,7 +3,7 @@ import { Container , Col, Row , Button, Card } from 'react-bootstrap';
 import Image from 'next/image';
 import productData from '@/data/productData';
 
-export default function productSection() {
+export default function ProductSection() {
     const [productSectionData] = useState<any>(productData);
 
     console.log(productSectionData);
