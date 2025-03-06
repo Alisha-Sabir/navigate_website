@@ -12,7 +12,7 @@ const CounterCard = ({
   index,
 }: {
   title: string;
-  count: number;
+  count: any;
   index : number;
 }) => {
   const { ref, inView } = useInView({
