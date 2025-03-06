@@ -1,17 +1,14 @@
 import Head from "next/head";
 import Header from '../components/Header';
 import HomeSection from '../components/HomeSection';
-import ContactUs from '../components/ContactUs';
 import Counter from '../components/Counter';
 import Tips from '../components/Tips';
 import Journey from '../components/Journey';
 import Services from '../components/Services';
-import DiscoverThings from '../components/DiscoverThings';
 import TestimonialDetails from '../components/TestimonialDetails';
 // import WideFeedbackSlider from '../components/WideFeedbackSlider';
 // import FeedbackSlider from '../components/FeedbackSlider';
 import ContactUsComponent from "@/components/ContactUsComponent";
-import BackgroundComponent from "@/components/BackgroundComponent";
 import Footer from '../components/Footer';
 import usePageTitle from "../hooks/usePageTitle";
 

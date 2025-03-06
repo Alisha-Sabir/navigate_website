@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Card, ListGroup } from "react-bootstrap";
-import { IoMdStar } from "react-icons/io";
-import { LiaStarHalfSolid } from "react-icons/lia";
 import Image from "next/image";
 import feedBackData from "@/data/feedbackData";
 import Slider from "react-slick";

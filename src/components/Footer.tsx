@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import footerLinks from "@/data/footerLinks";
+import Link from 'next/link';
 
 export default function Footer() {
 
@@ -92,19 +91,19 @@ export default function Footer() {
 
             <Col md={3} lg={3} xl={2} className="mx-auto mx-md-0 mx-lg-2 mx-xl-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Company</h6>
-            <a href="/about-us">
+              <Link legacyBehavior href="/about-us">
               <p style={{ cursor : "pointer", color : "#D0D4E0" }}>About</p>
-            </a>
-            <a href="/pricing">
+            </Link>
+            <Link legacyBehavior href="/pricing">
               <p style={{ cursor : "pointer", color : "#D0D4E0" }}>Pricing</p>
-            </a>
+            </Link>
             </Col>
 
             <Col md={3} lg={3} xl={2} className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Product</h6>
-            <a href="/">
+              <Link legacyBehavior href="/">
               <p style={{ cursor : "pointer", color : "#D0D4E0" }}>Features</p>
-            </a>
+            </Link>
               <p style={{ cursor : "pointer", color : "#D0D4E0" }}>Login</p>
             </Col>
 
@@ -168,20 +167,20 @@ export default function Footer() {
         style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}
       >
         <Row>
-         <Col xs={12} md={3} lg={3}>
-          <a href={footerLinksData.facebook} target="_blank">
-          <FaFacebook style={{ cursor : "pointer" }} size={22} className='me-3'/>
-          </a>
-         <a href={footerLinksData.twitter} target="_blank">
-          <FaXTwitter style={{ cursor : "pointer" }}  size={22} className='me-3'/>
-          </a>
-          
-         <a href={footerLinksData.insta} target="_blank">
-          <BsInstagram style={{ cursor: "pointer" }} size={22} className="me-3" />
-        </a>
-        <a href={footerLinksData.linkedin} target="_blank">
-          <IoLogoLinkedin style={{ cursor : "pointer" }} size={22} className='me-3' />
-        </a>
+          <Col xs={12} md={3} lg={3}>
+            <Link legacyBehavior href={footerLinksData.facebook} target="_blank">
+            <FaFacebook style={{ cursor : "pointer" }} size={22} className='me-3'/>
+            </Link>
+            <Link legacyBehavior href={footerLinksData.twitter} target="_blank">
+            <FaXTwitter style={{ cursor : "pointer" }}  size={22} className='me-3'/>
+            </Link>
+            
+            <Link legacyBehavior href={footerLinksData.insta} target="_blank">
+            <BsInstagram style={{ cursor: "pointer" }} size={22} className="me-3" />
+          </Link>
+          <Link legacyBehavior href={footerLinksData.linkedin} target="_blank">
+            <IoLogoLinkedin style={{ cursor : "pointer" }} size={22} className='me-3' />
+          </Link>
         {/* <a href={footerLinksData.youtube} target="_blank">
           <FaYoutube style={{ cursor : "pointer" }} size={22} className='me-3' />
         </a>   */}

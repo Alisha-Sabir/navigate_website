@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Card, Button, Badge, ButtonGroup } from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Badge } from "react-bootstrap";
 import { RiCheckboxCircleFill } from "react-icons/ri";
 import pricingData from '@/data/pricingData';
 import { MdElectricBolt } from "react-icons/md";
@@ -7,7 +7,7 @@ import { MdElectricBolt } from "react-icons/md";
 export default function PricingHome () {
 
     // const [selected, setSelected] = useState<any>("Monthly");
-    const [pricingSectionData, setPricingSectionData] = useState<any>(pricingData);
+    const [pricingSectionData] = useState<any>(pricingData);
 
     // const handleSelect = (selectedKey: string) => {
     //     setSelected(selectedKey);

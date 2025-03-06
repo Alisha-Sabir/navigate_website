@@ -7,7 +7,7 @@ import journeyData from "@/data/journeyData";
 export default function Footer() {
   const [activeIndex, setActiveIndex] = useState(0);
   const sliderRef = useRef<Slider | null>(null);
-  const [journeySectionData, setJourneySectinoData] = useState(journeyData);
+  const [journeySectionData] = useState(journeyData);
 
   const sliderSettings: Settings = {
     dots: true,

@@ -1,6 +1,6 @@
 import React, { useState, ReactNode } from "react";
 import Image from "next/image";
-import { Container , Button , Row, Col } from "react-bootstrap";
+import { Container , Button, Col } from "react-bootstrap";
 import contactData from '@/data/contactData';
 
 interface ContactUsProps {

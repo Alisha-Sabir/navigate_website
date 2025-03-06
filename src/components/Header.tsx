@@ -1,7 +1,6 @@
 import React, { useState , useEffect } from 'react';
 import { Container, Nav, Navbar, NavDropdown, Button, Row , Col, Card } from 'react-bootstrap';
 import Image from 'next/image';
-import ProductSection from "@/components/ProductSection";
 import { useRouter } from "next/router";
 import productData from '@/data/productData';
 
@@ -19,10 +18,6 @@ export default function Header() {
   }, []);
 
   console.log("productSectionData", productSectionData);
-
-  const handleHomeNavigation = (url: any) => {
-    router.push(url);
-  };
 
   // const handleToggleDropdown = () => {
   //   setIsOpen(prevIsOpen => !prevIsOpen);

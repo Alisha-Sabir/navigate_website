@@ -1,6 +1,5 @@
 import Head from "next/head";
 import React from 'react';
-import { Container , Row, Col } from "react-bootstrap";
 import Header from '@/components/Header';
 import PricingHome from '@/components/PricingHome';
 import BookChat from '@/components/BookChat';
@@ -10,7 +9,6 @@ import AgentSection from '@/components/AgentSection';
 import ContactUsComponent from "@/components/ContactUsComponent";
 import Footer from '@/components/Footer';
 import usePageTitle from "../hooks/usePageTitle";
-import ProductSection from "@/components/ProductSection";
 
 export default function Pricing() {
     // Page title

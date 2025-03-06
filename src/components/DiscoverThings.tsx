@@ -5,7 +5,7 @@ import discoverData from "@/data/discoverData";
 
 export default function DiscoverThings() {
   const [selected, setSelected] = useState("driving-for-dollars");
-  const [discoverContent, setDiscoverContent] = useState(discoverData as any);
+  const [discoverContent] = useState(discoverData as any);
 
   const handleSelect = (selectedKey: string | null) => {
     if (selectedKey) setSelected(selectedKey);

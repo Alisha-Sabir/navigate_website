@@ -1,12 +1,8 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Button, Form, Carousel } from "react-bootstrap";
+import { Container, Row, Col,} from "react-bootstrap";
 import Image from "next/image";
-import { useForm } from "react-hook-form";
 import aboutHomeData from "@/data/aboutHomeData";
 
-type FormFields = {
-  Email: string;
-};
 
 export default function AboutHomeSection() {
     const [aboutHomeSectionData] = useState(aboutHomeData);

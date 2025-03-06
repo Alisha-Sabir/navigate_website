@@ -4,7 +4,7 @@ import Image from 'next/image';
 import productData from '@/data/productData';
 
 export default function productSection() {
-    const [productSectionData] = useState(productData) as any;
+    const [productSectionData] = useState<any>(productData);
 
     console.log(productSectionData);
 

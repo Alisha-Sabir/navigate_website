@@ -4,7 +4,7 @@ import Image from 'next/image';
 import aboutData from '@/data/aboutData';
 
 export default function AboutSection() {
-    const [aboutSectionData, setAboutSectionData] = useState(aboutData as any);
+    const [aboutSectionData] = useState(aboutData as any);
 
     return (
         <section className='mt-3 mt-md-5 pt-5'>

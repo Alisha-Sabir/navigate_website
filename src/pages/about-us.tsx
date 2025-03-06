@@ -4,11 +4,9 @@ import Head from "next/head";
 import AboutHomeSection from "@/components/AboutHomeSection";
 import AboutSection from "@/components/AboutSection";
 import AboutTrackSection from "@/components/AboutTrackSection";
-import BookChat from '@/components/BookChat';
 import FeedbackSlider from '@/components/FeedbackSlider';
 // import ContactUs from '@/components/ContactUs';
 import Footer from '@/components/Footer';
-import ProductSection from "@/components/ProductSection";
 import ContactUsComponent from "@/components/ContactUsComponent";
 import usePageTitle from "../hooks/usePageTitle";
 

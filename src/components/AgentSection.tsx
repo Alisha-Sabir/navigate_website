@@ -1,11 +1,8 @@
 import React, { useState, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import agentData from "@/data/agentData";
 import { TbPlayerPauseFilled, TbPlayerPlayFilled } from "react-icons/tb";
-
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function AgentSection() {
   const [agentSectionData] = useState(agentData);

@@ -1,21 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Container, Row, Col, Button, Form, Carousel } from "react-bootstrap";
 import Image from "next/image";
-import dynamic from "next/dynamic";
 import { useForm } from "react-hook-form";
 import homeData from "@/data/homeData";
 import { HiOutlineVolumeUp, HiOutlineVolumeOff } from "react-icons/hi";
 
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
-
-type FormFields = {
-  Email: string;
-};
-
 export default function HomeSection() {
   const [index, setIndex] = useState(0);
   // const handleSelect = (selectedIndex: number) => setIndex(selectedIndex);
-  const [homeSectionData, setHomeSectionData] = useState(homeData);
+  const [homeSectionData] = useState(homeData);
   const [isMuted, setIsMuted] = useState(true);
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
