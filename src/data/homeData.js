@@ -7,17 +7,17 @@ const homeData =
             {
                 id: 1,
                 src: "http://www.w3schools.com/html/mov_bbb.mp4",
-                alt: "Video 1"
+                title: "Video 1"
             },
             {
                 id: 2,
                 src: "http://www.w3schools.com/html/mov_bbb.mp4",
-                alt: "Video 2"
+                title: "Video 2"
             },
             {
                 id: 3,
                 src: "http://www.w3schools.com/html/mov_bbb.mp4",
-                alt: "Video 3"
+                title: "Video 3"
             },
         ],
             // companies : [

@@ -29,7 +29,7 @@ export default function Header() {
         <Navbar.Brand href="/">
           <Image 
             src="/images/navigate_logo.png"
-            alt="Logo"
+            alt="navigate_logo"
             width={170}
             height={40}
             quality={100}
@@ -113,6 +113,8 @@ export default function Header() {
               <NavDropdown
                 title="Product"
                 id="product-dropdown"
+                // tabIndex="0"
+                role="button"
                 // onClick={(event) => {
                  
                 //   setIsOpen(!isOpen);
@@ -131,14 +133,14 @@ export default function Header() {
               <Card className="rounded-0 border-top-0 border-bottom-0">
                 <Image
                   src={productSectionData.image}
-                  alt="product_image"
+                  alt="product"
                   width={382}
                   height={300}
                   quality={100}
                   className="img-fluid pt-5"
                 />
                 <Card.Body className='pt-4 pb-5'>
-                  <b style={{ color: "#55585D", fontSize: "14px" }} className="text-break">
+                  <b style={{ color: "gray", fontSize: "14px" }} className="text-break">
                     {productSectionData.description}
                   </b>
                   <Button variant="transparent" 
@@ -150,22 +152,22 @@ export default function Header() {
             </Col>
 
             <Row className="d-flex align-items-stretch align-items-center pt-0 pt-xl-5 gy-3 gy-xl-0 ps-0 ps-xl-3 mb-5 mb-xl-0">
-            <h5 className="montserrat-uniqueExample text-break p-3">
+            <h2 className="montserrat-uniqueExample text-break p-3">
                     {productSectionData.subheading}
-                  </h5>
+                  </h2>
               {productSectionData.cards.map((card: any, index: any) => (
                 <Col key={index} md={12} lg={6} xl={6} className="d-block d-xl-flex p-xl-4">
                   <Col lg={2}>
                     <Image
                       src={card.icon}
-                      alt="Product 1"
+                      alt={`Product ${card.id}`}
                       width={40}
                       height={40}
                       className="img-fluid me-5 me-md-2"
                     />
                   </Col>
                   <Col lg={11}>
-                    <h5 className="inter-home text-break">{card.title}</h5>
+                    <b className="inter-home text-break fs-5">{card.title}</b><br />
                     <b style={{ color: "#55585D", fontSize: "14px" }} className="text-break">
                       {card.description}
                     </b>
@@ -182,7 +184,7 @@ export default function Header() {
             <Nav.Link href="/about-us">About</Nav.Link>
           </Nav>
           <Nav className='gap-3'>
-            <Nav.Link href="#deets">Login</Nav.Link>
+            <Nav.Link href="/">Login</Nav.Link>
             {/* <Nav.Link eventKey={2} href="#memes">
               Get Started
             </Nav.Link> */}

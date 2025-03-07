@@ -12,7 +12,8 @@ const counterData = [
     {
       id : 3,
       title: "Data Updates",
-      count: "24/7",
+      count: 24,
+      subValue : 7,
     },
     {
       id : 4,

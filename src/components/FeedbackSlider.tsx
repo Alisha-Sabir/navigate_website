@@ -135,7 +135,7 @@ export default function Counter() {
                       <Col xs={3} md={2} lg={12} xl={2} className="text-break">
                         <Image
                           src={items.profile}
-                          alt={items.userName}
+                          alt={`User ${items.id}`}
                           width={50}
                           height={30}
                           quality={100}

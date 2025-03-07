@@ -34,6 +34,7 @@ export default function AgentSection() {
               height="auto"
               loop={false}
               controls={false}
+              aria-label="Video about our agents"
             />
             {/* <div
               className="position-absolute text-white text-start"

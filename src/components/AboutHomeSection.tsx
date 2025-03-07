@@ -12,12 +12,14 @@ export default function AboutHomeSection() {
       <Container fluid className="text-start text-lg-end pt-1 pt-lg-5">
         <Row className="mt-5 d-flex align-items-center align-items-xl-start">
           <Col xs={12} lg={6} className="mt-5 pt-4">
+        <header>
             <h1 className="inter-home ms-0 ms-md-4 ms-lg-0 me-lg-1 me-xl-4" style={{ color: "#444BC6" }}>
               {aboutHomeSectionData.title}
             </h1>
-            <h1 className="inter-home ms-0 ms-md-4 ms-lg-0 me-0 me-lg-1 me-xl-4" style={{ lineHeight: "38px" }}>
+            <h2 className="inter-home ms-0 ms-md-4 ms-lg-0 me-0 me-lg-1 me-xl-4" style={{ lineHeight: "38px" }}>
               {aboutHomeSectionData.subtitle}
-            </h1>
+            </h2>
+          </header>
             <p style={{ lineHeight: "31px" }} className="home-description pt-3 mx-0 mx-md-4 mx-lg-1 mx-xl-4">
               {aboutHomeSectionData.description}
             </p>
@@ -44,7 +46,7 @@ export default function AboutHomeSection() {
                 {/* Background Image */}
                 <Image
                 src="/images/overlay_3.png"
-                alt="overlay_image"
+                alt="overlay"
                 width={300}
                 height={300}
                 quality={100}
@@ -68,7 +70,7 @@ export default function AboutHomeSection() {
             <div className="position-relative">
               <Image
                 src={aboutHomeSectionData.person.image}
-                alt="homesection-image"
+                alt={`${aboutHomeSectionData.person.designation}`}
                 width={800}
                 height={650}
                 quality={100}
@@ -80,7 +82,7 @@ export default function AboutHomeSection() {
               {/* Background Image */}
               <Image
                 src="/images/background.png"
-                alt="home-section-image"
+                alt="about_background"
                 width={800}
                 height={650}
                 quality={100}

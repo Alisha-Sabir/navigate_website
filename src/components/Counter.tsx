@@ -9,10 +9,12 @@ import counterData from "@/data/counterData";
 const CounterCard = ({
   title,
   count,
+  subValue,
   index,
 }: {
   title: string;
-  count: any;
+  count: number;
+  subValue?: any;
   index : number;
 }) => {
   const { ref, inView } = useInView({
@@ -27,13 +29,30 @@ const CounterCard = ({
         <Row className="my-0 my-xl-3">
             <div className="p-3 p-lg-5">
               <>
-              <h1 className="fw-bold">
+              {/* <h1 className="fw-bold">
               {inView && (typeof count === "number" ? (
                 <CountUp start={0} end={count} duration={2} />
               ) : (
                 count
               ))}
-            </h1>
+            </h1> */}
+            {/* {inView && typeof count === "number" && (
+                <h1 className="fw-bold">
+                  <CountUp start={0} end={count} duration={2} />
+                </h1>
+              )} */}
+              {inView && (
+                  <h1 className="fw-bold">
+                    <CountUp start={0} end={count} duration={2} />
+                    {index === 1 && (
+                      <span>
+                        +
+                      </span>
+                    )}
+                    {subValue ? ` / ` : ""} 
+                    {subValue && <CountUp start={0} end={subValue} duration={2} />}
+                  </h1>
+                )}
                   <p className="pe-4 home-description">{title}</p>
               </>
             </div>
@@ -49,6 +68,8 @@ const Counter = () => {
   
   const [counterSectionData] = useState(counterData);
 
+  console.log("data", counterSectionData);
+
   return (
     <Container
       className="border-2 rounded-4 w-75 position-relative"
@@ -59,6 +80,7 @@ const Counter = () => {
             key={index}
             count={item.count}
             title={item.title}
+            subValue={item.subValue}
             index={index}
           />
         ))}
@@ -66,7 +88,7 @@ const Counter = () => {
       <div className="position-absolute bottom-50 end-50 d-none d-lg-block">
               <Image
                 src="/images/overlay_1.png"
-                alt="image"
+                alt="overlay_img"
                 width={230}
                 height={200}
                 className="img-fluid"

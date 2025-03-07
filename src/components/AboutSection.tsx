@@ -14,7 +14,7 @@ export default function AboutSection() {
             <Col xs={12} md={10} xl={12} className="mx-auto text-center">
                 <Image 
                 src={aboutSectionData.image}
-                alt="about_image"
+                alt="about"
                 width={1300}
                 height={1000}
                 quality={100}
@@ -108,7 +108,7 @@ export default function AboutSection() {
                         <Card.Body>
                         <Image
                              src={card.icon}
-                             alt={card.icon}
+                             alt={`Card ${card.id}`}
                              width={50}
                              height={50}
                              quality={100}

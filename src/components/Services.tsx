@@ -66,7 +66,7 @@ export default function Services() {
                     {index === 1 && (
                     <Image
                     src="/images/overlay_3.png"
-                    alt="overlay_image"
+                    alt="overlay"
                     width={200} 
                     height={200} 
                     quality={100}

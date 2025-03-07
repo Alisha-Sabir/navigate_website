@@ -42,9 +42,9 @@ const FAQs = () => {
                                 <Accordion.Item eventKey={String(index)} key={index}>
                                 <Accordion.Header className="no-focus">
                                     <div className="d-flex justify-content-between w-100">
-                                        <p className="home-title" style={{ fontSize: "19px" }}>
+                                        <h3 className="home-title" style={{ fontSize: "19px" }}>
                                             {index + 1}. {faq.question}
-                                        </p>
+                                        </h3>
                                         <span style={{ fontSize : "20px" }}>{activeKey === String(index) ? "−" : "+"}</span>
                                     </div>
                                 </Accordion.Header>

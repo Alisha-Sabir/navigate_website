@@ -12,7 +12,7 @@ export default function AboutHomeSection () {
                     <Col xs={12} md={12}>
                         <Image 
                         src={trackSectionData.image} 
-                        alt="about-track-image" 
+                        alt="track" 
                         width={1300} 
                         height={500} 
                         className='img-fluid'

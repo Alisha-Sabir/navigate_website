@@ -67,9 +67,9 @@ export default function TestimonialDetails() {
                   />
                   </Col>
                   <Col xs={12} lg={11}>
-                   <p style={{ fontSize : "25px" }} className="fw-bold mb-3">
+                   <h1 style={{ fontSize : "25px" }} className="fw-bold mb-3">
                      {item.heading}
-                   </p>
+                   </h1>
                    <div className="d-flex mt-3 text-center">
                      {generateStars(item.stars)}
                      {/* <small className="text-secondary ms-1 text-dark">{item.rating}</small> */}
@@ -82,7 +82,7 @@ export default function TestimonialDetails() {
                      <Col xs={3} md={2} lg={2}>
                        <Image
                          src={item.profileimage}
-                         alt={item.username}
+                         alt={`Profile of ${item.username}`}
                          width={60}
                          height={60}
                          quality={100}

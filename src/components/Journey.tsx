@@ -57,7 +57,7 @@ export default function Footer() {
                     <Col xs={12} xl={2} className="d-flex align-items-top">
                       <Image
                         src={item.icon}
-                        alt={item.title}
+                        alt={`Icon for ${item.title}`}
                         width={50}
                         height={50}
                         quality={100} 
@@ -74,7 +74,12 @@ export default function Footer() {
             ))}
             <Row className="text-start ms-2 ms-xl-2 mt-4">
               <Col>
-               <Button size="lg" className="navigate-btn">Join Now</Button>
+               <Button 
+               aria-label="Join Now to start your property prospecting journey" 
+               size="lg" 
+               className="navigate-btn"
+               >
+                Join Now</Button>
               </Col>
             </Row>
           </Col>
@@ -83,7 +88,7 @@ export default function Footer() {
           <Col md={12} lg={8} className="rounded-4 overflow-hidden ps-2 ps-xl-5">
           <Slider ref={sliderRef} {...sliderSettings}>
             {journeySectionData.map((item, index) => (
-              <div key={index} className="rounded-4 overflow-hidden p-2">
+              <div key={index} className="rounded-4 overflow-hidden p-2" tabIndex={0}>
                 <Image
                   src={item.slide}
                   alt={item.title}

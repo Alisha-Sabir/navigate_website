@@ -68,7 +68,7 @@ export default function Footer() {
               /> */}
               <Image
               src="/images/navigate_logo.png"
-              alt="Logo"
+              alt="navigate_logo"
               width={200}
               height={200}
               quality={100}
@@ -104,7 +104,9 @@ export default function Footer() {
               <Link legacyBehavior href="/">
               <p style={{ cursor : "pointer", color : "#D0D4E0" }}>Features</p>
             </Link>
+            <Link legacyBehavior href="/">
               <p style={{ cursor : "pointer", color : "#D0D4E0" }}>Login</p>
+            </Link>
             </Col>
 
             <Col md={3} lg={3} xl={2} className="mx-auto mb-4">

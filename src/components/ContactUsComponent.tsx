@@ -28,7 +28,7 @@ interface ContactUsProps {
                  <Col xs={12} md={6} lg={6} className="position-absolute bottom-0 end-0 d-none d-md-block contact-us-img">
                     <Image 
                     src={contactSectionData.image}
-                    alt="contact_us_image"
+                    alt="contact_us"
                     width={800}
                     height={800}
                     className='img-fluid'

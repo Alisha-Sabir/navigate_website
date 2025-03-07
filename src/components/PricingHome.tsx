@@ -85,7 +85,7 @@ export default function PricingHome () {
                             <br />
                             <small 
                             className="fw-bold" 
-                            style={{ fontSize: "15px" , color : "#1EAC5F" }}
+                            style={{ fontSize: "15px" , color : "green" }}
                             >
                             {pricingSectionData.annualbtn.offer}
                             </small>
@@ -146,7 +146,7 @@ export default function PricingHome () {
                         </Row>
                         ) : ""}
                              {card.heading ? (
-                                <h3 className="fw-bold">{card.heading}</h3>
+                                <h2 className="fw-bold">{card.heading}</h2>
                             ) : <br />}
                             <small 
                             style={index === 1 ? 
@@ -156,7 +156,7 @@ export default function PricingHome () {
                                 {card.description}
                             </small>
                             {/* <div className="d-flex align-items-center my-3"> */}
-                                <h2 className="fw-bold my-2">{card.price}<small style={{ fontSize : "20px" }}>/mo</small></h2>
+                                <h3 className="fw-bold my-2">{card.price}<small style={{ fontSize : "20px" }}>/mo</small></h3>
                                     <small 
                                     style={{ 
                                         color: index === 1 ? "white" : "#55585D", 

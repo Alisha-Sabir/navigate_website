@@ -63,8 +63,11 @@ export default function HomeSection() {
                   <Col xl={2} />
                   <Col xs={12} md={8} lg={7} xl={6}>
                     <Form.Control
+                      id="emailInput"
                       type="email"
+                      // name="Email"
                       placeholder="@ Enter your email"
+                      aria-label="Email Address"
                       // className="border-0 border-bottom rounded-0 bg-transparent mt-0 mt-md-2 mt-xl-2"
                       className="bg-transparent form-control-lg ms-0 ms-xl-3"
                       {...register("Email", {
@@ -75,9 +78,10 @@ export default function HomeSection() {
                         },
                       })}
                       maxLength={100}
+                      // aria-describedby="emailError" // Associate error message with input
                     />
                     {errors.Email && (
-                    <div className="text-start pt-2 ps-2 ps-xl-4 text-danger">
+                    <div id="emailError" className="text-start pt-2 ps-2 ps-xl-4 text-danger">
                       {errors.Email?.message as string}
                     </div>
                   )}
@@ -119,6 +123,7 @@ export default function HomeSection() {
                 {homeSectionData.videos.map((video: any) => (
                   <Carousel.Item
                     key={video.id}
+                    id={`video-${video.id}`} // Add a unique ID for SEO
                     className="position-relative overflow-hidden"
                     style={{
                       borderRadius: "20px",
@@ -157,8 +162,9 @@ export default function HomeSection() {
                     onEnded={() => {
                       setIndex((prevIndex) => (prevIndex + 1) % homeSectionData.videos.length);
                     }}
+                    title={`Video: ${video.title}`}
                   />
-                    <div
+                    <Button
                       className="position-absolute bottom-0 mb-4 start-0 m-3 p-2 rounded-circle text-white"
                       style={{
                         cursor: "pointer",
@@ -168,13 +174,14 @@ export default function HomeSection() {
                         border: "1px solid white",
                       }}
                       onClick={() => setIsMuted(!isMuted)}
+                      aria-label={isMuted ? "Unmute video" : "Mute video"}
                     >
                       {isMuted ? (
                         <HiOutlineVolumeOff color="#444BC6" size={26} />
                       ) : (
                         <HiOutlineVolumeUp color="#444BC6" size={26} />
                       )}
-                    </div>
+                    </Button>
                   </Carousel.Item>
                 ))}
               </Carousel>
@@ -182,7 +189,7 @@ export default function HomeSection() {
               {/* Background Image */}
               <Image
                 src="/images/background.png"
-                alt="home-section-image"
+                alt="home_background"
                 width={800}
                 height={650}
                 quality={100}

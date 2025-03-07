@@ -29,7 +29,7 @@ export default function Services() {
                 {/* > */}
                     <Image 
                     src={contactSectionData.image}
-                    alt="contact_us_image"
+                    alt="contact_us"
                     width={650}
                     height={650}
                     className='img-fluid mb-4'
