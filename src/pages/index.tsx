@@ -10,13 +10,13 @@ import TestimonialDetails from '../components/TestimonialDetails';
 // import FeedbackSlider from '../components/FeedbackSlider';
 import ContactUsComponent from "@/components/ContactUsComponent";
 import Footer from '../components/Footer';
-import usePageTitle from "../hooks/usePageTitle";
+// import usePageTitle from "../hooks/usePageTitle";
 
 
 
 export default function Home() {
   // Page title
-  usePageTitle("Home");
+  // usePageTitle("Home");
 
 
   const contactData = {
@@ -28,6 +28,8 @@ export default function Home() {
   return (
     <> 
       <Head>
+        <title>Navigate - Property Solutions</title>
+        <meta name="description" content="Explore comprehensive property solutions with Navigate. We offer expert services to help you manage, buy, and sell properties effortlessly." />
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Header />

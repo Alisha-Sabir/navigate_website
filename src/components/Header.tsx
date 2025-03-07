@@ -140,7 +140,7 @@ export default function Header() {
                   className="img-fluid pt-5"
                 />
                 <Card.Body className='pt-4 pb-5'>
-                  <b style={{ color: "gray", fontSize: "14px" }} className="text-break">
+                  <b style={{ color: "#55585D", fontSize: "14px" }} className="text-break">
                     {productSectionData.description}
                   </b>
                   <Button variant="transparent" 
