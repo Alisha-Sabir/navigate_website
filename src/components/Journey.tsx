@@ -31,12 +31,13 @@ export default function Footer() {
     <section>
       <Container className="py-5">
         <div className="w-100 text-center my-5">
-          <small className="text-uppercase fw-semibold" style={{ color : '#444BC6' }}>
+          <small
+            className="text-uppercase fw-semibold"
+            style={{ color: "#444BC6" }}
+          >
             Your Property Prospecting Journey Made Simple
           </small>
-          <h1 className="inter-home">
-          From Search to Connection in Minutes
-          </h1>
+          <h1 className="inter-home">From Search to Connection in Minutes</h1>
         </div>
         <Row className="d-flex align-items-center">
           <Col md={12} lg={4}>
@@ -45,10 +46,12 @@ export default function Footer() {
                 key={index}
                 className="py-1 border-0 mb-2 w-96"
                 onClick={() => goToSlide(index)}
+                role="button"
                 style={{
                   cursor: "pointer",
                   // backgroundColor: index === activeIndex ? "#fff" : "#FAFAFA",
-                  boxShadow: index === activeIndex ? "2px 2px 2px lightgray" : "none",
+                  boxShadow:
+                    index === activeIndex ? "2px 2px 2px lightgray" : "none",
                   transition: "background-color 0.3s ease",
                 }}
               >
@@ -60,13 +63,20 @@ export default function Footer() {
                         alt={`Icon for ${item.title}`}
                         width={50}
                         height={50}
-                        quality={100} 
+                        quality={100}
                       />
                     </Col>
                     <Col xs={12} xl={9}>
-                      <span style={{ color : "black" }} className="fs-5 home-description">{item.title}</span>
+                      <span
+                        style={{ color: "black" }}
+                        className="fs-5 home-description"
+                      >
+                        {item.title}
+                      </span>
                       <br />
-                      <small className="home-description">{item.description}</small>
+                      <small className="home-description">
+                        {item.description}
+                      </small>
                     </Col>
                   </Row>
                 </Card.Body>
@@ -74,34 +84,43 @@ export default function Footer() {
             ))}
             <Row className="text-start ms-2 ms-xl-2 mt-4">
               <Col>
-               <Button 
-               aria-label="Join Now to start your property prospecting journey" 
-               size="lg" 
-               className="navigate-btn"
-               >
-                Join Now</Button>
+                <Button
+                  aria-label="Join Now to start your property prospecting journey"
+                  size="lg"
+                  className="navigate-btn"
+                >
+                  Join Now
+                </Button>
               </Col>
             </Row>
           </Col>
 
           {/* Right Side Slider */}
-          <Col md={12} lg={8} className="rounded-4 overflow-hidden ps-2 ps-xl-5">
-          <Slider ref={sliderRef} {...sliderSettings}>
-            {journeySectionData.map((item, index) => (
-              <div key={index} className="rounded-4 overflow-hidden p-2" tabIndex={0}>
-                <Image
-                  src={item.slide}
-                  alt={item.title}
-                  quality={100}
-                  layout="responsive" 
-                  width={item.width} 
-                  height={item.height}
-                  className="rounded-4 my-4 shadow"
-                />
-              </div>
-            ))}
-          </Slider>
-        </Col>
+          <Col
+            md={12}
+            lg={8}
+            className="rounded-4 overflow-hidden ps-2 ps-xl-5"
+          >
+            <Slider ref={sliderRef} {...sliderSettings}>
+              {journeySectionData.map((item, index) => (
+                <div
+                  key={index}
+                  className="rounded-4 overflow-hidden p-2"
+                  tabIndex={0}
+                >
+                  <Image
+                    src={item.slide}
+                    alt={item.title}
+                    quality={100}
+                    layout="responsive"
+                    width={item.width}
+                    height={item.height}
+                    className="rounded-4 my-4 shadow"
+                  />
+                </div>
+              ))}
+            </Slider>
+          </Col>
         </Row>
       </Container>
     </section>
